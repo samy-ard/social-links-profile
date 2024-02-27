@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--green: 	hsl(75, 94%, 57%);
+	--white: 	hsl(0, 0%, 100%);
+	--gray: 	hsl(0, 0%, 20%);
+	--ash: 		hsl(0, 0%, 12%);
+	--black: 	hsl(0, 0%, 8%);
+	--primary: var(--green);
+	--font: 'Inter', sans-serif;
+}
+
+@font-face {
+	font-family: 'Inter';
+	src: url('./assets/fonts/Inter-Regular.woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.25;
+	color: var(--white);
+	font-family: var(--font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 600;
+	margin: 0 0 1rem;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+p {
+	font-size: 0.875em;
+	margin: 0 0 1rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	cursor: pointer;
+	display: block;
+	font-weight: 600;
+	color: var(--white);
+	font-size: 0.875rem;
+	padding: 1em 1.5em;
+	border-radius: 0.25rem;
+	background-color: var(--gray);
+
+	&:hover, &:focus {
+		color: var(--gray);
+		background-color: var(--green);
+	}
+}
+
+.main {
+	min-height: 100vh;
+	padding: 7.25rem 1.5rem;
+	background-color: var(--black);
+}
+
+.card {
+	padding: 1.5rem;
+	max-width: 24rem;
+	text-align: center;
+	margin-inline: auto;
+	border-radius: 0.5rem;
+	background-color: var(--ash);
+}
+
+.card-avatar {
+	width: 5.5rem;
+	border-radius: 50%;
+	margin-inline: auto;
+	margin-bottom: 1.75rem;
+}
+
+.card-name {
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.card-location {
+	font-size: 0.875rem;
+	color: var(--green);
+	margin-bottom: 1.75rem;
+}
+
+.card-info {
+	margin-bottom: 1.5rem;
+}
+
+.social-media {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.social-media li:not(:last-child) {
+	margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+	.main {
+		padding-block: 10.875rem;
+	}
+
+	.card {
+		padding: 2.5rem;
+	}
+}
