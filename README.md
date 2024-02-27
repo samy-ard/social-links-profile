@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github](https://github.com/samy-ard/social-links-profile/)
-- Live Site URL: [live](https://samy-ard.github.com/social-links-profile/)
+- Live Site URL: [live](https://samy-ard.github.io/social-links-profile/)
 
 ## My process
 
